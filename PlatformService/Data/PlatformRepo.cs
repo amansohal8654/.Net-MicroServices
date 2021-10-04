@@ -32,7 +32,7 @@ namespace PlatformService.Data
             return _context.Platforms.FirstOrDefault(p => p.Id == id);
         }
 
-        public bool saveChanges()
+        public bool SaveChanges()
         {
             return (_context.SaveChanges() >= 0);
         }
