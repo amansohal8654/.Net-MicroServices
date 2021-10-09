@@ -2,9 +2,10 @@
 
 ## Description
 
-Working with .net core 5 and dedicated persistence layer for multiple services 
-Using Docker for containerization and Deploying our services to Kubernetes cluster 
-Employing the API Gateway pattern to route to our services
+Working with .net core 5 and dedicated persistence layer for multiple services.
+Using Docker for containerization and Deploying our services to Kubernetes cluster.
+Employing the API Gateway pattern to route to our services.
+Building Synchronous messaging between services (HTTP & gRPC).
 
 ## Running the Solution
 
