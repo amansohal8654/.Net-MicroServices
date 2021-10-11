@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: platforms-depl
@@ -14,4 +14,4 @@ spec:
     spec: 
       containers: 
         - name: platformsservice
-          image: aman8654/platformsservice:latest
+          image: aman8654/platformservice:latest

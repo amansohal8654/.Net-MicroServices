@@ -2,18 +2,12 @@
 
 ## Description
 
-<<<<<<< HEAD
 Working with .net core 5 and dedicated persistence layer for multiple services.
 Using Docker for containerization and Deploying our services to Kubernetes cluster.
 Employing the API Gateway pattern to route to our services.
 Building Synchronous messaging between services (HTTP & gRPC).
 Building Asynchronous messaging between services using an Event Bus (RabbitMQ)
-=======
-Working with .net core 5 and dedicated persistence layer for multiple services 
-Using Docker for containerization and Deploying our services to Kubernetes cluster 
-Employing the API Gateway pattern to route to our services
 
->>>>>>> parent of fc29163 (trying again)
 ## Running the Solution
 
 To run the solution you will need the dotnet CLI which can be installed by issuing the following command in a powershell terminal:
