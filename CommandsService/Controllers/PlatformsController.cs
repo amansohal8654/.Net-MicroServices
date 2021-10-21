@@ -19,5 +19,7 @@ namespace CommandsService.Controllers
 
             return Ok("Inbound test of from Platform Controler");
         }
+
+        
     }
 }
