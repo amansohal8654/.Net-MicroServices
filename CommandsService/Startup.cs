@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CommandService.AsyncDataService;
 using CommandService.Data;
 using CommandService.EventProcessing;
+using CommandService.SyncDataSerevices.Grpc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,6 +35,7 @@ namespace CommandsService
             services.AddScoped<ICommandRepo, CommandRepo>();
             services.AddControllers();
 
+            services.AddScoped<IPlatformDataClient, PlatformDataClient>();
             services.AddHostedService<MessageBusSubscriber>();
             services.AddSingleton<IEventProcessor, EventProcessor>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -63,6 +65,8 @@ namespace CommandsService
             {
                 endpoints.MapControllers();
             });
+
+            PrepDb.PrepPopulation(app);
         }
     }
 }
